@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampliación Ocular - Triángulo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AMPLIACIÓN OCULAR - TRIÁNGULO</h1>
+        <p class="instruction">Centrar la mirada en la línea del medio y deslizarla según la indicación. Percebir las palabras sin intentar leerlas.</p>
+        <div id="settings">
+            <label for="speedInput">Selecciona la velocidad (ms):</label>
+            <input type="number" id="speedInput" value="1000" min="100" step="100"> <!-- Valor por defecto de 1000ms -->
+        </div>
+        <div id="containerInputButton" class="container-input-button">
+            <button id="startButton">Iniciar</button>
+        </div>
+        <div id="timer"></div>
+        
+        <div id="triangleContainer" class="triangle-container hidden">
+            <div class="triangle">
+                <div class="center-line"></div>
+                <div id="textSlot">
+                    <div class="line">En la época fría</div>
+                    <div class="line">hay animales que</div>
+                    <div class="line">hibernan. Unos pasan este tiempo</div>
+                    <div class="line">durmiendo, como el topo y el tejón, que lo</div>
+                    <div class="line">hacen bajo tierra. El erizo y el lirón duermen en un hueco</div>
+                    <div class="line">de un árbol y el murciélago, colgado en una cueva. Todos ellos están</div>
+                    <div class="line">al abrigo del frío y no necesitan comer gracias a la grasa que han acumulado</div>
+                    <div class="line">en su cuerpo. Otros animales hibernan en sus madrigueras y, de vez en cuando, comen lo.</div>
+                </div>
+                <div class="blue-highlight"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
